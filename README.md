@@ -17,6 +17,7 @@ docker-compose ps
 docker-compose stop
 docker-compose rm
 docker-compose kill
+docker-compose scale web=5
 docker rm container_name
 ```
 
