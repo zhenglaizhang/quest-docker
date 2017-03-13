@@ -31,4 +31,9 @@ docker stats $(docker ps -q) # TODO, use name instead of #
 docker top cont1
 docker top cont1 -aux
 docker top cont1 -faux # any options to `ps`
+
+
+docker exec -it cont. bash
+bash# ps aux
+bash# top
 ```
