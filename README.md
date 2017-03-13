@@ -16,6 +16,7 @@ docker-compose up -d
 docker-compose ps
 docker-compose stop
 docker-compose rm
+docker-compose kill
 docker rm container_name
 ```
 
