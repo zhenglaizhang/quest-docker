@@ -16,15 +16,19 @@ docker-compose up -d
 docker-compose ps
 docker-compose stop
 docker-compose rm
-docker rm cont.
+docker rm container_name
 ```
 
+
+## Simple Monitoring
 ```bash
 docker run -it --name=ubuntu -p 8080:8080 ubuntu bash
-
 
 # 
 docker stats --all --no-stream
 docker stats ubuntu
 docker stats $(docker ps -q) # TODO, use name instead of #
+docker top cont1
+docker top cont1 -aux
+docker top cont1 -faux # any options to `ps`
 ```
